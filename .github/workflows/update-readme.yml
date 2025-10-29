@@ -1,0 +1,24 @@
+name: Update README
+
+on:
+  repository_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Update README
+        run: |
+          curl -sS https://raw.githubusercontent.com/masci/dev/refs/heads/main/site/content/now.md > README.md
+
+      - name: Commit and push changes
+        uses: stefanzweifel/git-auto-commit-action@v7
+        with:
+          commit_message: "Update README from now.md"
+          branch: main
