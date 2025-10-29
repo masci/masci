@@ -4,6 +4,9 @@ on:
   repository_dispatch:
   workflow_dispatch:
 
+env:
+  NOW_PAGE: https://raw.githubusercontent.com/masci/dev/refs/heads/main/site/content/now.md
+
 jobs:
   update:
     runs-on: ubuntu-latest
@@ -16,7 +19,7 @@ jobs:
 
       - name: Update README
         run: |
-          curl -sS https://raw.githubusercontent.com/masci/dev/refs/heads/main/site/content/now.md > README.md
+          curl -sS $NOW_PAGE | awk '/^---$/ {c++; if (c==2) p=1; next} p' > README.md
 
       - name: Commit and push changes
         uses: stefanzweifel/git-auto-commit-action@v7
