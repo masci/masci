@@ -1,6 +1,8 @@
 
 _Yet another [now](https://nownownow.com/about) page inspired by [Derek Sivers](https://sive.rs/nowff)._
 
+<!--- content -->
+
 ### 👷 Work
 
 After two years working on the open source AI framework [Haystack](https://github.com/deepset-ai/haystack), I joined
