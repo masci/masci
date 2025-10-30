@@ -1,3 +1,8 @@
+### 📝 Recent writings
+
+- [The coding interview in 2025](https://dev.pippi.im/writing/the-coding-interview-in-2025/)
+- [Python Tooling at Scale: LlamaIndex’s Monorepo Overhaul](https://dev.pippi.im/writing/python-tooling-at-scale/)
+- [Turbo charge your template prompts with Banks](https://dev.pippi.im/writing/turbo_charge_your_template_prompts_with_banks/)
 
 ### 👷 Work
 
