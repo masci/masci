@@ -5,7 +5,7 @@ on:
   workflow_dispatch:
 
 env:
-  NOW_PAGE: https://raw.githubusercontent.com/masci/dev/refs/heads/main/site/content/now.md
+  NOW_PAGE: https://raw.githubusercontent.com/masci/dev/refs/heads/main/content/now.md
 
 jobs:
   update:
